@@ -1,0 +1,60 @@
+site_name: "Mullhollands Homelab"
+site_url: "https://mullholland.net"
+site_description: >-
+  Overview of my activities
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.top
+    - toc.integrate
+    - content.tabs.link
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/icons/logo.png
+  favicon: assets/icons/logo.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+plugins:
+  - search
+  - awesome-pages
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/mullholland
+    - icon: fontawesome/brands/docker 
+      link: https://hub.docker.com/u/mullholland
+    - icon: fontawesome/brands/gitlab 
+      link: https://gitlab.com/mullholland
+    - icon: fontawesome/solid/a 
+      link: https://galaxy.ansible.com/mullholland
+    - icon: fontawesome/solid/a 
+      link: https://mullholland.net/ansible/
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true 

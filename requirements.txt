@@ -1,0 +1,5 @@
+###### mkdocs requirements ######
+mkdocs
+mkdocs-material
+# https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+mkdocs-awesome-pages-plugin

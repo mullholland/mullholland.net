@@ -1,0 +1,5 @@
+nav:
+    - Home: 'index.md'
+    - ansible
+    - kubernetes
+    - special_thanks
